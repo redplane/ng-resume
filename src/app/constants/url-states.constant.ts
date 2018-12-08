@@ -14,9 +14,8 @@ export class UrlStatesConstant {
 
     public static profileTechnicalSkillModuleUrl = '/technical-skill';
 
-    public static profileProjectModuleName = 'projects';
+    public static projectModuleName = 'project';
 
-    public static profileProjectModuleUrl = '/projects';
 
     //#endregion
 

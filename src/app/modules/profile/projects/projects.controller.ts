@@ -3,7 +3,7 @@ import {IProfileProjectScope} from "../../../interfaces/scopes/profile-project.s
 import {IProjectService} from "../../../interfaces/services/project-service.interface";
 import {Project} from "../../../models/entities/project";
 
-export class ProfileProjectController implements IController {
+export class ProjectsController implements IController {
 
     //#region Constructor
 

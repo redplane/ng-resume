@@ -17,10 +17,10 @@
                     {{experience.role | translate}}
 
                     <div class="time">
-                        <span>{{experience.from}}</span>
+                        <span>{{experience.from | amUtc | amDateFormat:'MMM YYYY'}}</span>
                         <span> - </span>
                         <span ng-if="experience.to == null">{{'TITLE_NOW' | translate}}</span>
-                        <span ng-if="experience.to != null">{{experience.to}}</span>
+                        <span ng-if="experience.to != null">{{experience.to | amUtc | amDateFormat:'MMM YYYY'}}</span>
                     </div>
                 </div>
 

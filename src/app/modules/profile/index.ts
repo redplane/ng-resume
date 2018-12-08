@@ -6,8 +6,6 @@ import {module} from 'angular';
 import {IEducationService} from "../../interfaces/services/education-service.interface";
 import {IProfileService} from "../../interfaces/services/profile-service.interface";
 import {ProfileResolve} from "../../interfaces/resolves/profile.resolve";
-import {forkJoin, Observable} from "rxjs";
-import {map} from "rxjs/operators";
 import {Profile} from "../../models/entities/profile";
 import {Education} from "../../models/entities/education";
 
@@ -61,6 +59,20 @@ export class ProfileModule {
             }
         };
 
+        // Experiences view.
+        views[`${UrlStatesConstant.projectModuleName}@${UrlStatesConstant.profileMasterLayoutModuleName}`] = {
+            controller: 'projectsController',
+            templateProvider: ($q: IQService) => {
+                return $q((resolve) => {
+                    // lazy load the view
+                    require.ensure([], () => {
+                        require('./projects/projects.scss');
+                        resolve(require('./projects/projects.html'));
+                    });
+                });
+            }
+        };
+
         $stateProvider
             .state(UrlStatesConstant.profileMasterLayoutModuleName, {
                 url: UrlStatesConstant.profileMasterLayoutModuleUrl,
@@ -74,8 +86,12 @@ export class ProfileModule {
                         return $q((resolve) => {
                             require.ensure([], (require) => {
 
+                                // Import angular moment.
+                                require('moment');
+                                require('angular-moment/angular-moment');
+
                                 // Sub-module.
-                                let ngModule = module('app.profile', []);
+                                let ngModule = module('app.profile', ['angularMoment']);
 
                                 // Profile master-layout controller.
                                 const {MasterLayoutController} = require('./master-layout/master-layout.controller');
@@ -86,13 +102,17 @@ export class ProfileModule {
                                 // Experiences controller.
                                 const {ExperiencesController} = require('./experiences/experiences.controller');
 
+                                // Projects controller.
+                                const {ProjectsController} = require('./projects/projects.controller');
+
                                 // Import controller file.
                                 ngModule.controller('profileMasterLayoutController', MasterLayoutController);
                                 ngModule.controller('aboutMeController', AboutMeController);
                                 ngModule.controller('experiencesController', ExperiencesController);
+                                ngModule.controller('projectsController', ProjectsController);
 
                                 $ocLazyLoad.inject(ngModule.name);
-                                resolve(ngModule.controller);
+                                resolve();
                             })
                         });
                     },

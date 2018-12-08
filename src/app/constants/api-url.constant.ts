@@ -2,7 +2,7 @@ export class ApiUrlConstant {
 
     //#region Properties
 
-    public static loadProjects =  'assets/data/project.json';
+    public static loadProjects =  'assets/data/projects.json';
 
     public static loadCertificates = 'assets/data/education.json';
 
