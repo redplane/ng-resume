@@ -1,0 +1,26 @@
+.panel {
+    border-radius: 0 !important;
+}
+
+.panel .panel-heading {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.form-control{
+    border-radius: 0 !important;
+}
+
+.progress{
+    border-radius: 0 !important;
+}
+
+.btn{
+    border-radius: 0 !important;
+}
+
+@media print{
+    .hide-on-print{
+        visibility: collapse !important;
+    }
+}

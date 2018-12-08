@@ -1,0 +1,160 @@
+{
+  "min": 0,
+  "max": 10,
+  "skills": [
+    {
+      "name": "SKILL_DATABASE",
+      "image": "/assets/images/database.png",
+      "items": [
+        {
+          "name": "Microsoft SQL Server",
+          "value": 70
+        },
+        {
+          "name": "Neo4j",
+          "value": 50
+        },
+        {
+          "name": "ArrangoDB",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "name": "SKILL_PROGRAMMING_LANGUAGE",
+      "image": "/assets/images/code.png",
+      "items": [
+        {
+          "name": "C#",
+          "value": 85
+        },
+        {
+          "name": "XML",
+          "value": 50
+        },
+        {
+          "name": "Javascript",
+          "value": 78
+        },
+        {
+          "name": "SQL",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "name": "SKILL_BACKEND_FRAMEWORK_TOOL",
+      "image": "/assets/images/back-end.png",
+      "items": [
+        {
+          "name": ".NET Core",
+          "value": 80
+        },
+        {
+          "name": ".NET Framework",
+          "value": 85
+        },
+        {
+          "name": "Rabbit MQ",
+          "value": 60
+        },
+        {
+          "name": "Entity Framework",
+          "value": 80
+        },
+        {
+          "name": "Entity Framework Core",
+          "value": 70
+        },
+        {
+          "name": "Autofac",
+          "value": 75
+        },
+        {
+          "name": "NUnit",
+          "value": 50
+        },
+        {
+          "name": "SignalR",
+          "value": 70
+        },
+        {
+          "name": "SignalR Core",
+          "value": 65
+        },
+        {
+          "name": "Visual Studio IDE",
+          "value": 80
+        },
+        {
+          "name": "Stoplight",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "name": "SKILL_FRONTEND_FRAMEWORK_TOOL",
+      "image": "/assets/images/front-end.jpg",
+      "items": [
+        {
+          "name": "JQuery",
+          "value": 85
+        },
+        {
+          "name": "Css",
+          "value": 80
+        },
+        {
+          "name": "Bootstrap",
+          "value": 75
+        },
+        {
+          "name": "AngularJS",
+          "value": 80
+        },
+        {
+          "name": "Angular 4",
+          "value": 70
+        },
+        {
+          "name": "Webpack",
+          "value": 50
+        },
+        {
+          "name": "Webstorm IDE",
+          "value": 60
+        },
+        {
+          "name": "WPF (Windows presentation foundation)",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "name": "SKILL_SOURCE_VERSION_CONTROL",
+      "image": "/assets/images/svc.png",
+      "items": [
+        {
+          "name": "TortoiseSVN",
+          "value": 80
+        },
+        {
+          "name": "TortoiseGit",
+          "value": 82
+        },
+        {
+          "name": "Team Foundation",
+          "value": 59
+        },
+        {
+          "name": "Github",
+          "value": 75
+        },
+        {
+          "name": "Bitbucket",
+          "value": 40
+        }
+      ]
+    }
+  ]
+}

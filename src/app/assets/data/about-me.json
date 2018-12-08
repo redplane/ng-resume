@@ -1,0 +1,28 @@
+{
+  "fullName": "Nguyen Duy Linh",
+  "photo": "/assets/avatar.jpg",
+  "role": "TITLE_FULL_STACK_DEVELOPER",
+  "contacts": [
+    {
+      "icon": "fa fa-envelope",
+      "value": "lightalakanzam@gmail.com"
+    }
+  ],
+  "languages": [
+    {
+      "name": "TITLE_VIETNAMESE",
+      "description": "TITLE_NATIVE"
+    },
+    {
+      "name": "TITLE_ENGLISH",
+      "description": "TITLE_INTERMEDIATE"
+    }
+  ],
+  "interests": [
+    "TITLE_PLAY_COMPUTER_GAMES",
+    "TITLE_LEARNING_NEW_TECHNOLOGIES",
+    "TITLE_WATCHING_ACTION_MOVIES",
+    "TITLE_LISTENING_TO_INSTRUMENTAL_MUSIC"
+  ],
+  "description": "DESCRIPTION_ABOUT_ME"
+}

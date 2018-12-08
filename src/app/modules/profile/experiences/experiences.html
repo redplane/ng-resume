@@ -1,0 +1,62 @@
+<div class="section"
+     ng-init="ngOnInit()">
+    <div class="section-header">
+        <img class="section-icon"
+             ng-src="/assets/images/icons/experience.png">
+        <div class="section-title">
+            {{'TITLE_WORKING_EXPERIENCE' | translate}}
+        </div>
+    </div>
+
+    <!--Working experience items-->
+    <div ng-if="!ngIsExperienceLoading">
+        <div class="item"
+             ng-repeat="experience in experiences">
+            <div class="item-header">
+                <div class="title">
+                    {{experience.role | translate}}
+
+                    <div class="time">
+                        <span>{{experience.from}}</span>
+                        <span> - </span>
+                        <span ng-if="experience.to == null">{{'TITLE_NOW' | translate}}</span>
+                        <span ng-if="experience.to != null">{{experience.to}}</span>
+                    </div>
+                </div>
+
+
+                <div class="company">
+                    {{experience.company | translate}}
+                </div>
+            </div>
+            <div class="item-body">
+                <ng-bind-html ng-bind-html="experience.description | translate"></ng-bind-html>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Working experience placeholders-->
+    <div ng-if="ngIsExperienceLoading">
+        <div class="item"
+             ng-if="ngIsExperienceLoading">
+            <div class="item-header">
+                <div class="title">
+                    <div class="loading-bar w-25">
+                        <div class="loading-thumb"></div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="loading-bar">
+                        <div class="loading-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-body">
+                <div class="loading-bar w-75" ng-repeat="item in [1, 2, 3]">
+                    <div class="loading-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

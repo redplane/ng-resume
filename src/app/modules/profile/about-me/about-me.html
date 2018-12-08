@@ -1,0 +1,58 @@
+<!--User general info-->
+<div class="user">
+    <!--Avatar-->
+    <img class="avatar"
+         ng-src="{{profile.photo}}">
+
+    <div class="name">
+        {{profile.fullName}}
+    </div>
+
+    <div class="job-title">
+        {{profile.role | translate}}
+    </div>
+</div>
+
+<!--User contact-->
+<div class="user-contact">
+    <div class="contact"
+         ng-repeat="contact in profile.contacts">
+        <b class="{{contact.icon}}"></b>
+        <span class="contact-info">{{contact.value}}</span>
+    </div>
+</div>
+
+<!--User education-->
+<div class="user-education">
+    <div class="container-block-title">{{'TITLE_EDUCATION' | translate}}</div>
+    <div class="education-item"
+         ng-repeat="education in educations">
+        <h4 class="degree">{{education.degree | translate}}</h4>
+        <div class="university">{{education.university | translate}}</div>
+        <div class="time">{{education.from}} - {{education.to}}</div>
+    </div>
+</div>
+
+<!--User language-->
+<div class="user-language">
+    <div class="container-block-title">{{'TITLE_LANGUAGE' | translate}}</div>
+    <ul class="language-list">
+        <li ng-repeat="language in profile.languages">{{language.name | translate}}
+            <span class="description">
+                ({{language.description | translate}})
+            </span>
+        </li>
+    </ul>
+</div>
+
+<!--User interest-->
+<div class="user-interest">
+    <div class="container-block-title">
+        {{'TITLE_INTERESTS' | translate}}
+    </div>
+    <ul class="interest-list">
+        <li ng-repeat="interest in profile.interests">
+            {{interest | translate}}
+        </li>
+    </ul>
+</div>

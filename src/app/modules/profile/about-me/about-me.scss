@@ -1,0 +1,108 @@
+@import '../../../styles/constant/size.constant';
+
+.side-content {
+  // User.
+  .user {
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    align-items: center;
+    height: #{$width-sidebar}px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    img.avatar {
+      width: 50%;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 25px;
+      color: #ffffff;
+    }
+
+    .job-title {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+    }
+  }
+
+  // User contact.
+  .user-contact {
+    padding: 30px;
+
+    .contact {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #ffffff;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 5px;
+
+      &:hover {
+        .contact-info {
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  // User education.
+  .user-education {
+    padding: 30px;
+
+    .education-item {
+      color: #ffffff;
+      margin-bottom: 15px;
+
+      .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .university {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 14px;
+      }
+
+      .time {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // User language | user interest.
+  .user-language,
+  .user-interest {
+    padding: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+
+    .language-list,
+    .interest-list {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 10px;
+        color: #ffffff;
+
+        .description {
+          color: rgba(255, 255, 255, 0.6)
+        }
+      }
+    }
+  }
+}
