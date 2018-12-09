@@ -2,11 +2,11 @@
 <div class="user">
     <!--Avatar-->
     <img class="avatar"
-         ng-src="{{profile.photo}}">
+         ng-src="{{profile.photo}}" alt="{{profile.fullName}} avatar">
 
-    <div class="name">
+    <h3 class="name">
         {{profile.fullName}}
-    </div>
+    </h3>
 
     <div class="job-title">
         {{profile.role | translate}}

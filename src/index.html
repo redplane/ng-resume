@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-csp class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-csp class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-csp class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-csp class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Tell the crawler that website contains javascript contents-->
+    <meta name="fragment" content="!">
+
+    <!--CSP (Content security policy)-->
+    <meta name="Content-Security-Policy" content="font-src 'self'">
+    <meta name="Content-Security-Policy" content="img-src 'self'">
+    <meta name="Content-Security-Policy" content="font-src 'self'">
+    <meta name="Content-Security-Policy" content="script-src 'self'">
+    <meta name="Content-Security-Policy" content="style-src 'self'">
+    <meta name="Content-Security-Policy" content="media-src 'self'">
+
+    <!--Skype | facebook preview-->
+    <meta property="og:title" content="Nguyễn Duy Linh"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://i.ibb.co/TqRHMQ9/avatar.jpg"/>
+    <meta property="og:description"
+          content="Thông tin CV của ứng viên Nguyễn Duy Linh, ứng tuyển cho vị trí full-stack developer."/>
+
+    <!--Robot tag-->
+    <meta name="robots" content="index, nofollow">
+
+    <!--Android browser theme-->
+    <meta name="theme-color" content="#4B6A78">
+
+    <!--Web information-->
+    <title>Nguyen Duy Linh</title>
+    <meta name="description" content="Thông tin CV của ứng viên Nguyễn Duy Linh, ứng tuyển cho vị trí full-stack developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <base href="/">
+</head>
+<body>
+<ui-view></ui-view>
+</body>
+</html>

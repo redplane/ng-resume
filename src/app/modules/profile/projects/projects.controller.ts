@@ -10,6 +10,9 @@ export class ProjectsController implements IController {
     public constructor(public $project: IProjectService,
                        public $scope: IProfileProjectScope) {
 
+        // Property binding.
+        $scope.ngIsLoadingProjects = true;
+
         // Method binding.
         $scope.ngOnInit = this._ngOnInit;
     }
@@ -20,10 +23,12 @@ export class ProjectsController implements IController {
 
     // Called when component is initialized.
     private _ngOnInit = (): void => {
+
         this.$project
             .loadProjectsAsync()
             .subscribe((projects: Project[]) => {
                 this.$scope.projects = projects;
+                this.$scope.ngIsLoadingProjects = false;
             });
     };
 

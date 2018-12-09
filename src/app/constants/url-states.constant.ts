@@ -10,9 +10,7 @@ export class UrlStatesConstant {
 
     public static experienceModuleName = 'experience';
 
-    public static profileTechnicalSkillModuleName = 'technical-skill';
-
-    public static profileTechnicalSkillModuleUrl = '/technical-skill';
+    public static skillModuleName = 'skill';
 
     public static projectModuleName = 'project';
 

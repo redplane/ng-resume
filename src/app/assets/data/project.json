@@ -1,112 +1,143 @@
-{
-  "projects": [
-    {
-      "name": "VINCI",
-      "from": 1504108800000,
-      "to": null,
-      "company": "FPT Software & Petronas",
-      "description": "DESCRIPTION_VINCI",
-      "role": "TITLE_FULL_STACK_DEVELOPER",
-      "technologies": [
-        "ASP.NET Web API 2",
-        "Entity Framework 6.1",
-        "Visual Studio 2017 Community",
-        "TFS Team foundation.",
-        "AngularJS",
-        "Webpack"
-      ]
-    },
-    {
-      "name": "POINT",
-      "from": 1496160000000,
-      "to": 1504108800000,
-      "company": "FPT Software & Petronas",
-      "description": "DESCRIPTION_POINT",
-      "role": "TITLE_FRONT_END_DEVELOPER",
-      "technologies": [
-        "ASP.NET Web API 2",
-        "Entity Framework 6.1",
-        "Visual Studio 2017 Community",
-        "TFS Team foundation.",
-        "AngularJS"
-      ]
-    },
-    {
-      "name": "Immersive",
-      "from": 1490889600000,
-      "to": 1493481600000,
-      "company": "FPT Software",
-      "description": "DESCRIPTION_IMMERSIVE",
-      "role": "TITLE_BACK_END_DEVELOPER",
-      "technologies": [
-        "ASP.NET Core",
-        "Entity Framework Core",
-        "Visual Studio 2015 Community",
-        "Bitbucket",
-        "Tortoise git",
-        "Angular 4"
-      ]
-    },
-    {
-      "name": "KCSG",
-      "from": 1475164800000,
-      "to": 1490889600000,
-      "company": "FPT Software",
-      "description": "DESCRIPTION_KCSG",
-      "role": "TITLE_BACK_END_DEVELOPER",
-      "technologies": [
-        "C#",
-        "Entity framework",
-        "Visual Studio 2015 Community",
-        "Team Foundation",
-        "SignalR",
-        "AngularJS"
-      ]
-    },
-    {
-      "name": "TouchInspectionTool",
-      "from": 1427731200000,
-      "to": 1438272000000,
-      "company": "FPT Software",
-      "description": "DESCRIPTION_TOUCH_INSPECTION",
-      "role": "TITLE_FULL_STACK_DEVELOPER",
-      "technologies": [
-        "Javascript",
-        "JQuery",
-        "HTML",
-        "Visual Studio 2013 Community",
-        "ASP.NET MVC 4",
-        "Bootstrap",
-        "Inversion of controls",
-        "Microsoft SQL Express"
-      ]
-    },
-    {
-      "name": "Kokugo",
-      "from": 1422633600000,
-      "to": 1427731200000,
-      "company": "FPT Software",
-      "description": "DESCRIPTION_KOKUGO",
-      "role": "TITLE_FRONT_END_DEVELOPER",
-      "technologies": [
-        "Javascript",
-        "JQuery",
-        "HTML",
-        "Notepad++"
-      ]
-    },
-    {
-      "name": "QNET",
-      "from": 1414684800000,
-      "to": 1422633600000,
-      "company": "FPT Software",
-      "description": "DESCRIPTION_QNET",
-      "role": "TITLE_FRONT_END_DEVELOPER",
-      "technologies": [
-        "Inversion of controls",
-        "Windows presentation foundation (WPF)",
-        "C#"
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "POINT Plus",
+    "from": 1541030400000,
+    "to": null,
+    "company": "FPT Software & Petronas",
+    "description": "DESCRIPTION_POINT_PLUS",
+    "role": "TITLE_FRONT_END_DEVELOPER",
+    "technologies": [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "Visual Studio 2017 Community",
+      "Github",
+      "Angular 7",
+      "Bootstrap 3"
+    ]
+  },
+  {
+    "name": "Circle K - Quà tặng ước mơ",
+    "from": 1535760000000,
+    "to": 1541030400000,
+    "company": "FPT Software & Petronas",
+    "description": "DESCRIPTION_CIRCLE_K_DREAMY_REWARD",
+    "role": "TITLE_FRONT_END_DEVELOPER",
+    "technologies": [
+      "Github",
+      "Angular 7",
+      "Bootstrap 4"
+    ]
+  },
+  {
+    "name": "VINCI",
+    "from": 1504224000000,
+    "to": 1535760000000,
+    "company": "FPT Software & Petronas",
+    "description": "DESCRIPTION_VINCI",
+    "role": "TITLE_FULL_STACK_DEVELOPER",
+    "technologies": [
+      "ASP.NET Web API 2",
+      "Entity Framework 6.1",
+      "Visual Studio 2017 Community",
+      "TFS Team foundation.",
+      "AngularJS",
+      "Webpack",
+      "Bootstrap 3"
+    ]
+  },
+  {
+    "name": "POINT",
+    "from": 1493596800000,
+    "to": 1504224000000,
+    "company": "FPT Software & Petronas",
+    "description": "DESCRIPTION_POINT",
+    "role": "TITLE_FRONT_END_DEVELOPER",
+    "technologies": [
+      "ASP.NET Web API 2",
+      "Entity Framework 6.1",
+      "Visual Studio 2017 Community",
+      "TFS Team foundation.",
+      "AngularJS",
+      "Bootstrap 3"
+    ]
+  },
+  {
+    "name": "Immersive",
+    "from": 1488326400000,
+    "to": 1493596800000,
+    "company": "FPT Software",
+    "description": "DESCRIPTION_IMMERSIVE",
+    "role": "TITLE_BACK_END_DEVELOPER",
+    "technologies": [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "Visual Studio 2015 Community",
+      "Bitbucket",
+      "Tortoise git",
+      "Angular 2",
+      "Bootstrap 4"
+    ]
+  },
+  {
+    "name": "KCSG",
+    "from": 1475280000000,
+    "to": 1488326400000,
+    "company": "FPT Software",
+    "description": "DESCRIPTION_KCSG",
+    "role": "TITLE_BACK_END_DEVELOPER",
+    "technologies": [
+      "C#",
+      "Entity framework",
+      "Visual Studio 2015 Community",
+      "Team Foundation",
+      "SignalR",
+      "AngularJS"
+    ]
+  },
+  {
+    "name": "TouchInspectionTool",
+    "from": 1427846400000,
+    "to": 1438387200000,
+    "company": "FPT Software",
+    "description": "DESCRIPTION_TOUCH_INSPECTION",
+    "role": "TITLE_FULL_STACK_DEVELOPER",
+    "technologies": [
+      "Javascript",
+      "JQuery",
+      "HTML",
+      "Visual Studio 2013 Community",
+      "ASP.NET MVC 4",
+      "Bootstrap",
+      "Inversion of controls",
+      "Microsoft SQL Express"
+    ]
+  },
+  {
+    "name": "Kokugo",
+    "from": 1422748800000,
+    "to": 1427846400000,
+    "company": "FPT Software",
+    "description": "DESCRIPTION_KOKUGO",
+    "role": "TITLE_FRONT_END_DEVELOPER",
+    "technologies": [
+      "Javascript",
+      "JQuery",
+      "HTML",
+      "Notepad++"
+    ]
+  },
+  {
+    "name": "QNET",
+    "from": 1412121600000,
+    "to": 1422633600000,
+    "company": "FPT Software",
+    "description": "DESCRIPTION_QNET",
+    "role": "TITLE_FRONT_END_DEVELOPER",
+    "technologies": [
+      "Inversion of controls",
+      "Windows presentation foundation (WPF)",
+      "C#",
+      "Windows service"
+    ]
+  }
+]

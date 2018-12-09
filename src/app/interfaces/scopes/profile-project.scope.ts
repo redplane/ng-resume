@@ -5,6 +5,9 @@ export interface IProfileProjectScope extends IScope {
 
     //#region Properties
 
+    // Whether projects are being loaded or not.
+    ngIsLoadingProjects: boolean;
+
     // List of projects that user has done.
     projects: Project[];
 

@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Microsoft SQL Server",
+    "point": 50
+  },
+  {
+    "name": "Neo4j",
+    "point": 20
+  },
+  {
+    "name": "C#",
+    "point": 80
+  },
+  {
+    "name": "Javascript",
+    "point": 78
+  },
+  {
+    "name": "SQL",
+    "point": 60
+  },
+  {
+    "name": ".NET Core",
+    "point": 80
+  },
+  {
+    "name": ".NET Framework",
+    "point": 85
+  },
+  {
+    "name": "Rabbit MQ",
+    "point": 60
+  },
+  {
+    "name": "Entity Framework",
+    "point": 80
+  },
+  {
+    "name": "Entity Framework Core",
+    "point": 70
+  },
+  {
+    "name": "Autofac",
+    "point": 75
+  },
+  {
+    "name": "NUnit",
+    "point": 50
+  },
+  {
+    "name": "SignalR",
+    "point": 70
+  },
+  {
+    "name": "SignalR Core",
+    "point": 65
+  },
+  {
+    "name": "Visual Studio IDE",
+    "point": 80
+  },
+  {
+    "name": "Stoplight",
+    "point": 88
+  },
+  {
+    "name": "JQuery",
+    "point": 85
+  },
+  {
+    "name": "Css",
+    "point": 80
+  },
+  {
+    "name": "Bootstrap",
+    "point": 75
+  },
+  {
+    "name": "AngularJS",
+    "point": 80
+  },
+  {
+    "name": "Angular 4",
+    "point": 70
+  },
+  {
+    "name": "Webpack",
+    "point": 50
+  },
+  {
+    "name": "Webstorm IDE",
+    "point": 60
+  },
+  {
+    "name": "WPF (Windows presentation foundation)",
+    "point": 70
+  },
+  {
+    "name": "TortoiseSVN",
+    "point": 80
+  },
+  {
+    "name": "TortoiseGit",
+    "point": 82
+  },
+  {
+    "name": "Team Foundation",
+    "point": 59
+  },
+  {
+    "name": "Github",
+    "point": 75
+  },
+  {
+    "name": "Bitbucket",
+    "point": 40
+  }
+]

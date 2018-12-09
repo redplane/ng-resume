@@ -34,6 +34,10 @@
   width: 75%;
 }
 
+.loading-bar.w-80 {
+  width: 80%;
+}
+
 @keyframes move-thumb-left-to-right {
   0% {
     margin-left: calc(0 - #{$width-loading-bar-thumb}px);

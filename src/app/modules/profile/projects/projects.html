@@ -1,4 +1,5 @@
-<div class="section">
+<div class="section"
+     ng-init="ngOnInit()">
     <div class="section-header">
         <img class="section-icon"
              ng-src="/assets/images/icons/project.png">
@@ -8,45 +9,78 @@
         </div>
     </div>
 
-    <div class="item" ng-repeat="item in [1, 2, 3, 4]">
-        <div class="item-header">
-            <div class="title">
-                POINT v3
+    <!--Loaded projects list-->
+    <div ng-if="!ngIsLoadingProjects">
+        <div class="item"
+             ng-repeat="project in projects">
+            <div class="item-header">
+                <div class="title">
+                    {{project.name}}
 
-                <div class="time">
-                    2015 - Present
+                    <div class="time">
+                        <span>{{project.from | amUtc | amDateFormat:'MMM YYYY'}}</span>
+                        <span> - </span>
+                        <span ng-if="project.to == null">{{'TITLE_NOW' | translate}}</span>
+                        <span ng-if="project.to != null">{{project.to | amUtc | amDateFormat:'MMM YYYY'}}</span>
+                    </div>
+                </div>
+
+                <!--Company-->
+                <div class="company">
+                    {{project.company}}
+                </div>
+
+                <div class="role">
+                    {{project.role | translate}}
                 </div>
             </div>
+            <div class="item-body">
+                <div class="form-group">
+                    <ng-bind-html ng-bind-html="project.description | translate"></ng-bind-html>
+                </div>
 
-
-            <div class="company">
-                FPT Software
-            </div>
-        </div>
-        <div class="item-body">
-            <div class="form-group">
-                Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo.
-            </div>
-
-            <div class="used-technology">
-                <label>Used technologies</label>
-                <div class="row">
-                    <div class="col-lg-4" ng-repeat="item in [1, 2, 3, 4, 5]">
-                        <div class="form-group">
-                            <a href="" class="technology">AngularJS</a>
+                <div class="used-technology">
+                    <label>{{'TITLE_USED_TECHNOLOGIES' | translate}}</label>
+                    <div class="row">
+                        <div class="col-lg-4"
+                             ng-repeat="technology in project.technologies">
+                            <div class="form-group">
+                                <a href="" class="technology">{{technology}}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
+    </div>
 
+    <!--Loading projects placeholder-->
+    <div ng-if="ngIsLoadingProjects">
+        <div class="item">
+            <div class="item-header">
+                <div class="title">
+                    <div class="loading-bar w-25">
+                        <div class="loading-thumb"></div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="loading-bar">
+                        <div class="loading-thumb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-body">
+                <div class="loading-bar w-70">
+                    <div class="loading-thumb"></div>
+                </div>
+                <div class="loading-bar w-75">
+                    <div class="loading-thumb"></div>
+                </div>
+                <div class="loading-bar w-80">
+                    <div class="loading-thumb"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

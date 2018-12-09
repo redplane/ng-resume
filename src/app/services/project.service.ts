@@ -20,7 +20,7 @@ export class ProjectService implements IProjectService {
     public loadProjectsAsync(): Observable<Project[]> {
         const loadProjectsPromise = this
             .$http
-            .get<Project[]>('/assets/data/projects.json')
+            .get<Project[]>('/assets/data/project.json')
             .then((httpResponse: IHttpResponse<Project[]>) => {
                 return httpResponse.data;
             });

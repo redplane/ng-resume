@@ -59,7 +59,7 @@ export class ProfileModule {
             }
         };
 
-        // Experiences view.
+        // Projects view.
         views[`${UrlStatesConstant.projectModuleName}@${UrlStatesConstant.profileMasterLayoutModuleName}`] = {
             controller: 'projectsController',
             templateProvider: ($q: IQService) => {
@@ -68,6 +68,20 @@ export class ProfileModule {
                     require.ensure([], () => {
                         require('./projects/projects.scss');
                         resolve(require('./projects/projects.html'));
+                    });
+                });
+            }
+        };
+
+        // Skill
+        views[`${UrlStatesConstant.skillModuleName}@${UrlStatesConstant.profileMasterLayoutModuleName}`] = {
+            controller: 'skillsController',
+            templateProvider: ($q: IQService) => {
+                return $q((resolve) => {
+                    // lazy load the view
+                    require.ensure([], () => {
+                        require('./skills/skills.scss');
+                        resolve(require('./skills/skills.html'));
                     });
                 });
             }
@@ -105,11 +119,15 @@ export class ProfileModule {
                                 // Projects controller.
                                 const {ProjectsController} = require('./projects/projects.controller');
 
+                                // Skills controller.
+                                const {SkillsController} = require('./skills/skills.controller');
+
                                 // Import controller file.
                                 ngModule.controller('profileMasterLayoutController', MasterLayoutController);
                                 ngModule.controller('aboutMeController', AboutMeController);
                                 ngModule.controller('experiencesController', ExperiencesController);
                                 ngModule.controller('projectsController', ProjectsController);
+                                ngModule.controller('skillsController', SkillsController);
 
                                 $ocLazyLoad.inject(ngModule.name);
                                 resolve();

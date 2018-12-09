@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {Experience} from "../models/entities/experience";
 import {fromPromise} from "rxjs/internal-compatibility";
 
-export class ExperienceServiceInterface implements IExperienceService {
+export class ExperienceService implements IExperienceService {
 
     //#region Properties
 

@@ -14,9 +14,11 @@
     display: -o-flex;
     display: -ms-flex;
 
-    width: 960px;
+    width: #{$break-point-lg-min}px;
 
     margin-top: 30px;
+    margin-bottom: 30px;
+
   }
 
   // Main content
@@ -43,4 +45,41 @@
       margin-bottom: 15px
     }
   }
+}
+
+// Media query.
+@media only screen and (max-width: #{$break-point-lg-min}px) {
+  .profile-master-layout {
+    .profile-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: #{$break-point-md-min}px) {
+
+  .profile-master-layout {
+    .profile-wrapper {
+      width: 100%;
+      flex-direction: column;
+
+      .main-content {
+        order: 1;
+      }
+
+      .side-content {
+        width: 100%;
+        order: 0;
+
+        .user-contact,
+        .user-education,
+        .user-interest,
+        .user-language {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
 }

@@ -41,8 +41,14 @@
         }
       }
 
-      .company {
+      .company,
+      .role {
         color: #97AAC3;
+      }
+
+      .role {
+        font-weight: bold;
+        font-size: 10px;
       }
     }
 
@@ -55,4 +61,8 @@
 .skill-item {
   display: flex;
   align-items: center;
+
+  .name {
+    font-size: 12px;
+  }
 }

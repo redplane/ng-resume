@@ -12,7 +12,7 @@ export class Project {
 
     public description: Array<string>;
 
-    public roles: Array<string>;
+    public role: string;
 
     public responsibilities: Array<string>;
 
@@ -28,7 +28,7 @@ export class Project {
         this.to = '';
         this.company = '';
         this.description = [];
-        this.roles = [];
+        this.role = '';
         this.responsibilities = [];
         this.technologies = [];
     }

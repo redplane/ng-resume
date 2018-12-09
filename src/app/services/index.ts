@@ -2,8 +2,8 @@ import {IModule} from "angular";
 import {ProjectService} from "./project.service";
 import {EducationService} from "./education.service";
 import {ProfileService} from "./profile.service";
-import {ExperienceServiceInterface} from "./experience.service";
-
+import {ExperienceService} from "./experience.service";
+import {SkillService} from "./skill.service";
 
 export class ServiceModule {
 
@@ -13,7 +13,8 @@ export class ServiceModule {
         ngModule.service('$project', ProjectService);
         ngModule.service('$education', EducationService);
         ngModule.service('$profile', ProfileService);
-        ngModule.service('$experience', ExperienceServiceInterface);
+        ngModule.service('$experience', ExperienceService);
+        ngModule.service('$skill', SkillService)
     }
 
     //#endregion
