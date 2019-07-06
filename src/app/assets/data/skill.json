@@ -114,5 +114,9 @@
   {
     "name": "Bitbucket",
     "point": 40
+  },
+  {
+    "name": "Ionic",
+    "point": 40
   }
 ]
